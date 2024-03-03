@@ -35,6 +35,34 @@
       }
       .service-style {
         margin-top: 15px;
+        background-color: #fafbfc;
+      }
+      .text-green {
+        color: #0b9b6b;
+      }
+      h2:before,
+      h2:after {
+        background-color: #0b9b6b;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+      h2::before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      h2::after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
+      .bg-red {
+        background-color: #f25757;
+      }
+      .bg-red:hover {
+        background-color: #69061a;
       }
     </style>
   </head>
@@ -99,29 +127,55 @@
       </div>
     </header>
     <!-- Service -->
-    <section id="service" class="container service-style">
+    <section
+      id="services"
+      class="service-style container-fluid container-fluid-max"
+    >
       <div class="row text-center">
-        <div class="col-12"><h2>Mengapa memilih kami?</h2></div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <i class="fas fa-list"></i>
-        <h3>Fasilitas Oke</h3>
-        <p>Fasilitas yang kami sediakan sangat lengkap dan nyaman</p>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Modul Lengkap</h3>
-        <p>Lebih dari 2000 modul tersedia di tempat kami</p>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <i class="fas fa-money-bill"></i>
-        <h3>Biaya Terjangkau</h3>
-        <p>Biaya Sangat Terjangkau</p>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <i class="fas fa-chart-line"></i>
-        <h3>Terarah</h3>
-        <p>Sistem pembelajaran kami cukup terarah dan mudah</p>
+        <div class="col-12 pb-4">
+          <h2 class="display-4">Mengapa memilih kami ?</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-list-ol fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green h4">Fasilitas Oke</h3>
+          <p>Fasilitas yang kami sediakan sangat lengkap dan nyaman</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-laptop-code fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green h4">Modul Lengkap</h3>
+          <p>Lebih dari 2000 modul tersedia di tempat kami</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-money-bill fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green h4">Biaya Terjangkau</h3>
+          <p>Biaya Sangat Terjangkau</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-chart-line fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green h4">Terarah</h3>
+          <p>Sistem pembelajaran kami cukup terarah dan mudah</p>
+        </div>
+        <div class="col-12 pt-3 mb-5">
+          <a
+            class="btn text-white bg-red btn-lg"
+            target="_blank"
+            href="#"
+            role="button"
+            >Services Lainnya</a
+          >
+        </div>
       </div>
     </section>
     <!-- Product -->
@@ -134,6 +188,5 @@
     <footer></footer>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="fontawesome-6.5.1-web/js/all.js"></script>
   </body>
 </html>
